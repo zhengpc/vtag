@@ -1,0 +1,12 @@
+<!ELEMENT tags ((tag | type)*)>
+
+<!ELEMENT tag (#PCDATA)>
+<!ATTLIST tag name CDATA #REQUIRED>
+<!ATTLIST tag description CDATA #IMPLIED>
+<!ATTLIST tag type CDATA #IMPLIED>
+<!ATTLIST tag ref CDATA #IMPLIED>
+
+<!ELEMENT type ((tag)*)>
+<!ATTLIST type name CDATA #REQUIRED>
+<!ATTLIST type description CDATA #IMPLIED>
+<!ATTLIST type classes CDATA #IMPLIED>
